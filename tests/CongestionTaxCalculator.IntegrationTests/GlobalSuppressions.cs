@@ -1,0 +1,1 @@
+﻿#pragma warning disable CS0103 // The name 'TagHelper' does not exist in the current context

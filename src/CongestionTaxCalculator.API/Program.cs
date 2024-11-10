@@ -1,13 +1,19 @@
+using CongestionTaxCalculator.API.Middlewares;
 using CongestionTaxCalculator.Application;
 using CongestionTaxCalculator.Infrastructure;
 using CongestionTaxCalculator.Infrastructure.Persistence;
+using Serilog;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+//Add support to logging with SERILOG
+builder.Host.UseSerilog((context, configuration) =>
+    configuration.ReadFrom.Configuration(context.Configuration));
 
+// Add services to the container.
 builder.Services
+    .AddScoped<ExceptionMiddleware>()
     .AddApplicationLayer()
     .AddInfrastructureLayer()
     .AddControllers()
@@ -25,6 +31,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+//Add support to logging request with SERILOG
+app
+    .UseSerilogRequestLogging()
+    .UseMiddleware<ExceptionMiddleware>();
+
 using var scope = app.Services.CreateScope();
 var service = scope.ServiceProvider.GetRequiredService<DbContextSeedData>();
 await service.SeedAsync();
@@ -36,3 +47,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+public partial class Program { }

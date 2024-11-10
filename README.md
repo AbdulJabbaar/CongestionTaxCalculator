@@ -1,11 +1,19 @@
 # Congestion Tax Calculator
 
 ## Getting started
-CongestionTaxCalculator follows the principle of domain-driven design (DDD) and clean architecture. The solution includes various layers like Domain, Application, Infrastructure and Presentation. To validate the business logic, there is a UnitTest project which validate the business logic.
+The CongestionTaxCalculator is designed with Domain-Driven Design (DDD) and follows the principles of Clean Architecture. The solution is structured into multiple layers, including Domain, Application, Infrastructure, and Presentation layers, promoting modularity and separation of concerns.
 
-This project is designed to calculate the congestion toll tax fee for vehicles with in specified city. Currently it is only setup with Gothenburg city, but you can add other cities like Stockholm by simply updating the seed method.
+## Features
+- Calculates congestion toll tax fees for vehicles within a specified city.
+- Currently configured for Gothenburg, with easy extensibility for additional cities, such as Stockholm, by updating the seed method.
+- In-memory database using EFCore’s InMemory package, eliminating the need for connection string configuration.
 
-There is no need to setup the connection string in the project. It is using EFCore InMemory database package.
+## Testing
+### Unit Tests
+The project includes a Unit Test suite to validate business logic, ensuring reliable calculations within the Domain layer.
+
+### Integration Tests
+An Integration Test suite has been integrated to verify end-to-end functionality across multiple layers, emulating real-world scenarios. You can expand this suite with additional test scenarios to validate different cases.
 
 ## Prerequisites
 Install the following prerequisites:
