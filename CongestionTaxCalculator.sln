@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Core", "1-Core", "{7AEF940E-3917-4B46-9BD4-0003BC771306}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Infrastructure", "2-Infrastructure", "{7218229E-0922-4136-8131-79FCDAE943FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Presentation", "3-Presentation", "{E6C62435-FDC3-464A-8CB3-83C8FAAFC571}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Tests", "4-Tests", "{3FD7215D-5945-459B-A57B-004E6C033B7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxCalculator.Domain", "src\CongestionTaxCalculator.Domain\CongestionTaxCalculator.Domain.csproj", "{02DF87F4-0DEF-4907-8697-977AE95C54AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxCalculator.Application", "src\CongestionTaxCalculator.Application\CongestionTaxCalculator.Application.csproj", "{7FD06A34-3D60-49D1-B12C-D054FF42D5B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxCalculator.Infrastructure", "src\CongestionTaxCalculator.Infrastructure\CongestionTaxCalculator.Infrastructure.csproj", "{B111EAE4-E2DE-4349-8F46-8B570118316D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxCalculator.UnitTests", "tests\CongestionTaxCalculator.UnitTests\CongestionTaxCalculator.UnitTests.csproj", "{F8455526-D860-4029-A0A2-B13BBF273B52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxCalculator.API", "src\CongestionTaxCalculator.API\CongestionTaxCalculator.API.csproj", "{C5E7007B-F10A-4F3A-943C-EE5A3CB764CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02DF87F4-0DEF-4907-8697-977AE95C54AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02DF87F4-0DEF-4907-8697-977AE95C54AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02DF87F4-0DEF-4907-8697-977AE95C54AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02DF87F4-0DEF-4907-8697-977AE95C54AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD06A34-3D60-49D1-B12C-D054FF42D5B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD06A34-3D60-49D1-B12C-D054FF42D5B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD06A34-3D60-49D1-B12C-D054FF42D5B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD06A34-3D60-49D1-B12C-D054FF42D5B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B111EAE4-E2DE-4349-8F46-8B570118316D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B111EAE4-E2DE-4349-8F46-8B570118316D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B111EAE4-E2DE-4349-8F46-8B570118316D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B111EAE4-E2DE-4349-8F46-8B570118316D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8455526-D860-4029-A0A2-B13BBF273B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8455526-D860-4029-A0A2-B13BBF273B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8455526-D860-4029-A0A2-B13BBF273B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8455526-D860-4029-A0A2-B13BBF273B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5E7007B-F10A-4F3A-943C-EE5A3CB764CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E7007B-F10A-4F3A-943C-EE5A3CB764CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E7007B-F10A-4F3A-943C-EE5A3CB764CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E7007B-F10A-4F3A-943C-EE5A3CB764CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{02DF87F4-0DEF-4907-8697-977AE95C54AA} = {7AEF940E-3917-4B46-9BD4-0003BC771306}
+		{7FD06A34-3D60-49D1-B12C-D054FF42D5B4} = {7AEF940E-3917-4B46-9BD4-0003BC771306}
+		{B111EAE4-E2DE-4349-8F46-8B570118316D} = {7218229E-0922-4136-8131-79FCDAE943FC}
+		{F8455526-D860-4029-A0A2-B13BBF273B52} = {3FD7215D-5945-459B-A57B-004E6C033B7B}
+		{C5E7007B-F10A-4F3A-943C-EE5A3CB764CE} = {E6C62435-FDC3-464A-8CB3-83C8FAAFC571}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B440D4B-EFA7-4466-B769-1167D57C6C8B}
+	EndGlobalSection
+EndGlobal
